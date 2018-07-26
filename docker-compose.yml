@@ -15,3 +15,5 @@ services:
     build: ./data
     expose:
       - "8080"
+  wificonnect:
+    build: ./resin-wifi-connect
