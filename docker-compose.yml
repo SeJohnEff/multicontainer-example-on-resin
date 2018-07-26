@@ -18,4 +18,4 @@ services:
   wificonnect:
     build: ./resin-wifi-connect
 # must run in priviliged mode to be able to change hostname
-    priviliged: true
+#    priviliged: true
