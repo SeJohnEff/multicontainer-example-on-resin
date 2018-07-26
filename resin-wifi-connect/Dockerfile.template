@@ -1,6 +1,7 @@
 FROM resin/%%RESIN_MACHINE_NAME%%-debian
 
-ENV INITSYSTEM on
+# Commented line below since cannot use in multi container
+# ENV INITSYSTEM on
 
 RUN apt-get update \
     && apt-get install -y dnsmasq wireless-tools \
