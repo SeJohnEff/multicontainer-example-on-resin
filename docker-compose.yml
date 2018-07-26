@@ -15,6 +15,11 @@ services:
 #    build: ./data
 #    expose:
 #      - "8080"
+  server:
+    build: ./simple-server-node
+    ports:
+      - "80"
+
   wificonnect:
     build: ./resin-wifi-connect
 # mmust run in priviliged mode to be able to change hostname
