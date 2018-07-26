@@ -1,7 +1,7 @@
 version: '2'
 services:
-  frontend:
-    build: ./frontend
+#  frontend:
+#    build: ./frontend
 #    expose:
 #      - "80"
 #  proxy:
