@@ -4,16 +4,16 @@ services:
     build: ./frontend
     expose:
       - "80"
-  proxy:
-    build: ./haproxy
-    depends_on:
-      - frontend
-      - data
-    ports:
-      - "80:80"
-  data:
-    build: ./data
-    expose:
-      - "8080"
+#  proxy:
+#    build: ./haproxy
+#    depends_on:
+#      - frontend
+#      - data
+#    ports:
+#      - "80:80"
+#  data:
+#    build: ./data
+#    expose:
+#      - "8080"
   wificonnect:
     build: ./resin-wifi-connect
