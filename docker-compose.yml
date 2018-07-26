@@ -1,9 +1,9 @@
 version: '2'
 services:
-  frontend:
-    build: ./frontend
-    expose:
-      - "80"
+#  frontend:
+#    build: ./frontend
+#    expose:
+#      - "80"
 #  proxy:
 #    build: ./haproxy
 #    depends_on:
