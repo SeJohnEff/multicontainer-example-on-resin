@@ -19,5 +19,6 @@ services:
     build: ./resin-wifi-connect
 # must run in priviliged mode to be able to change hostname
     privileged: true
+    network_mode: host
     labels:
       io.resin.features.dbus: '1'
