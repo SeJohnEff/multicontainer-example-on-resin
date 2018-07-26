@@ -17,7 +17,7 @@ services:
 #      - "8080"
   wificonnect:
     build: ./resin-wifi-connect
-# must run in priviliged mode to be able to change hostname
+# mmust run in priviliged mode to be able to change hostname
     privileged: true
     network_mode: host
     labels:
