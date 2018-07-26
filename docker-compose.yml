@@ -21,4 +21,4 @@ services:
     privileged: true
     network_mode: host
     labels:
-#      io.resin.features.dbus: '1'
+      io.resin.features.dbus: '1'
