@@ -2,13 +2,16 @@ version: '2'
 services:
   server:
     build: ./simple-server-node
-    ports:
-      - "80"
+    # Using the host's network stack inside container
+    network_mode: host
+#    ports:
+#      - "80"
 
   wificonnect:
     build: ./resin-wifi-connect
 # mmust run in priviliged mode to be able to change hostname
     privileged: true
-    network_mode: "host"
+    # Using the host's network stack inside container
+    network_mode: host
     labels:
       io.resin.features.dbus: '1'
