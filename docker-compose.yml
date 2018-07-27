@@ -2,6 +2,7 @@ version: '2'
 services:
   simple-server-node:
     build: ./simple-server-node
+    privileged: true
     # Using the host's network stack inside container
 #    network_mode: host
     ports:
