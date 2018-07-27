@@ -5,10 +5,9 @@ services:
 #    ports:
 #      - "80"
 
-  wificonnect:
-    build: ./resin-wifi-connect
-# mmust run in priviliged mode to be able to change hostname
+  wifi-connect:
+    build: ./wifi-connect
+    network_mode: "host"
     privileged: true
-    network_mode: host
     labels:
       io.resin.features.dbus: '1'
