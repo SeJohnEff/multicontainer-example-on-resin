@@ -1,20 +1,5 @@
 version: '2'
 services:
-#  frontend:
-#    build: ./frontend
-#    expose:
-#      - "80"
-#  proxy:
-#    build: ./haproxy
-#    depends_on:
-#      - frontend
-#      - data
-#    ports:
-#      - "80:80"
-#  data:
-#    build: ./data
-#    expose:
-#      - "8080"
   server:
     build: ./simple-server-node
     ports:
@@ -25,5 +10,5 @@ services:
 # mmust run in priviliged mode to be able to change hostname
     privileged: true
     network_mode: host
-#    labels:
-#      io.resin.features.dbus: '1'
+    labels:
+      io.resin.features.dbus: '1'
