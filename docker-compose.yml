@@ -5,8 +5,8 @@ services:
     privileged: true
     # Using the host's network stack inside container
 #    network_mode: host
-#    ports:
-#      - "80"
+    ports:
+      - "80"
 
   wificonnect:
     build: ./resin-wifi-connect
