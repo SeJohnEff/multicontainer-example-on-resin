@@ -3,7 +3,7 @@ services:
   simple-server-node:
     build: ./simple-server-node
     # Using the host's network stack inside container
-    network_mode: host
+#    network_mode: host
     ports:
       - "80"
 
